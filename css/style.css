@@ -545,3 +545,60 @@ button[type="submit"]:focus-visible {
     display: none;
   }
 }
+
+/* Server response and validation feedback */
+.form-status {
+  margin-bottom: 18px;
+  padding: 12px 16px;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  font-weight: bold;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status.is-info {
+  border-color: var(--accent);
+  background: #e0f7ff;
+  color: var(--accent-dark);
+}
+
+.form-status.is-success {
+  border-color: #15803d;
+  background: #dcfce7;
+  color: #14532d;
+}
+
+.form-status.is-error {
+  border-color: #b91c1c;
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.new-application {
+  color: inherit;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.field-error {
+  display: block;
+  margin-top: 4px;
+  color: #b91c1c;
+  font-size: 0.86rem;
+  font-weight: bold;
+}
+
+[aria-invalid="true"] {
+  outline: 2px solid #b91c1c;
+  outline-offset: 1px;
+}
+
+@media print {
+  .form-status,
+  .field-error {
+    display: none;
+  }
+}
