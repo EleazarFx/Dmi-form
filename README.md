@@ -93,5 +93,3 @@ are enabled. Photos are stored in `uploads/` and referenced by URL in the
 `applications.passport_photo` column. Both `data/` and `uploads/` are ignored by
 Git.
 
-> The read endpoints have no authentication. That is fine for a classroom demo,
-> but an authentication layer should be added before using real student data.
